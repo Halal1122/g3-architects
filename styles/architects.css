@@ -28,6 +28,7 @@ nav li {
 nav li a{
     text-decoration: none;
     color: #424242;
+    font-weight: 500;
 }
 
 .logo {
@@ -36,26 +37,93 @@ nav li a{
     font-size: 2.8rem;
     font-weight: 700;
 }
-/*baner-section*/
+/*banner-section*/
 
-.baner-hader{
+
+.banner-header{
     max-width: 700px;
     text-align: center;
     margin: 0 auto;
 }
-.baner-text{
+.banner-text{
     font-size: 4rem;
     color: #131313;
     font-weight: 700;
 }
-.btn-prymare{
-    width: 180px;
-    height: 44px;
+.btn-primary{
+    width: 220px;
     background: #FF900E;
     border-radius: 8px;
     font-size: 1.5rem;
     font-weight: 600;
     color: #fff;
     border: none;
-    margin-bottom: 50px;
+    padding: 20px 25px;
+    margin: 20px 0px 60px 0px ;
+}
+.banner-img{
+    width: 100%;
+}
+/* responsive media */
+/* mobile */
+@media screen and (max-width: 576px) {
+    header {
+        padding: 25px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .btn-primary{
+        width: 150px;
+        font-size: 1rem;
+        font-weight: 20;
+    }
+}
+/* teblete */
+@media screen and (min-width: 576px) and (max-width: 960px ) {
+    header {
+        padding: 60px;
+    }
+    nav {
+        flex-direction: column;
+    }
+    .btn-primary{
+        width: 150px;
+        font-size: 1rem;
+        font-weight: 20;
+    }
+}
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+
+}
+/* secend pra */
+ 
+.team-container{
+    display: flex;
+}
+.team-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.3rem;
+}
+.teams-content{
+    padding: 50px 20px 0px 50px;
+}
+.teams-title{
+    font-size: 45px;
+    color: #727272;
+}
+.our{
+    color: #131313;
+    font-weight: 500;
+}
+.our-features{
+    color: #FF900E;
+    font-weight: 700;
+}
+.teams-description{
+    font-weight: 400px;
+    color: #727272;
 }
